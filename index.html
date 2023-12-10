@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stephanie Soares Fotografia</title>
+  <link rel="stylesheet" href="style.css"> <!-- definições de forma geral  -->
+  <link rel="stylesheet" href="dropdown-menu.css"> <!-- definições do menu -->
+</head>
+
+<body>
+  <header>
+    <h1>Stephanie Soares Fotografia</h1>
+    <!-- Menus -->
+    <nav>
+      <ul class="dropdown-menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#portfolio">Portfolio</a>
+          <ul class="dropdown-submenu">
+            <li><a href="#">Aniversário</a></li>
+            <li><a href="#">Casal</a></li>
+            <li><a href="#">Gestante</a></li>
+            <li><a href="#">Profissional</a></li>
+          </ul>
+        </li>
+        <li><a href="#sobre-mim">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="inicio">
+    <h2>Bem-vindo ao meu mundo de fotografia!</h2>
+    <p>Sou uma fotógrafa profissional especializada em capturar momentos especiais de Aniversários, Casais e Gestantes.
+    </p>
+  </section>
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="gallery-container">
+      <!-- imagens do portfolio -->
+      <div class="gallery-items">
+        <img src="aniversario1.png" alt="Fotografia de Aniversário 1">
+        <h3>Aniversário</h3>
+      </div>
+      <div class="gallery-items">
+        <img src="casal2.png" alt="Fotografia de Casal 2">
+        <h3>Casal</h3>
+      </div>
+      <div class="gallery-items">
+        <img src="gestante2.png" alt="Fotografia de Gestante 1">
+        <h3>Gestante</h3>
+      </div>
+      <div class="gallery-items">
+        <img src="profissional.png" alt="Fotografia Comercial">
+        <h3>Profissional</h3>
+      </div>
+    </div>
+  </section>
+  <section id="sobre-mim">
+    <a class="sobre">
+      <img src="fotografa2.png" alt="Sobre mim">
+    </a>
+    <!-- Estrutura de Sobre Mim -->
+    <div>
+      <h2>Sobre Mim</h2>
+      <p>Olá, sou Stephanie, uma fotógrafa apaixonada por capturar momentos únicos e especiais. Minha missão é eternizar
+        os melhores momentos da sua vida.</p>
+    </div>
+  </section>
+  <!-- Campos para entrar em contato -->
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Estou disponível para agendar sessões de fotos e responder a todas as suas perguntas. Entre em contato comigo:
+    </p>
+  </section>
+  <form>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email_usuario" placeholder="name@email.com" required />
+    </div>
+    <div class="form-group">
+      <label for="nome">Nome Completo:</label>
+      <input type="text" id="nome" name="nome_completo" placeholder="Nome completo" required />
+    </div>
+    <div class="form-group">
+      <label for="assunto">Assunto:</label>
+      <input type="text" id="assunto" name="titulo-assunto" placeholder="Digite o assunto" />
+    </div>
+    <div class="form-group">
+      <label for="texto">Mensagem:</label>
+      <textarea id="texto" name="texto_usuario" placeholder="Digite a mensagem que deseja">
+                </textarea>
+    </div>
+    <div class="form-group submit-button">
+      <button type="submit">Enviar</button>
+    </div>
+  </form>
+  </footer>
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+  <footer>
+    <p>&copy; 2023 Fotografia Profissional</p>
+  </footer>
+</body>
+
+</html>
